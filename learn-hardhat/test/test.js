@@ -11,11 +11,11 @@ describe('Favorite Number Contract',()=>{
     })
 
     //the it block for testing
-    it('It should return 7 as my fav number',()=>{
+    it('It should return 7 as my fav number', async ()=>{
         expect(await favNumberContract.myFavoriteNumber()).to.equal(7);
     })
 
-    it('It should return 10 as my favorite number',async ()=>{
+    it('It should return 10 as my favorite number', async ()=>{
         const changeNumberTx = await favNumberContract.setMyFavNumber(10);
         await changeNumberTx.wait();
         expect(await favNumberContract.myFavoriteNumber);
