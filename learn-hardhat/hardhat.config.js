@@ -1,13 +1,14 @@
 require('@nomiclabs/hardhat-waffle')
+require('dotenv').config()
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const GOERLI_PRIVATE_KEY = `0a0ccfcbeb7e352f5a40c5c050cb17fdc5ee41004c35306a5d79c45a94b9ff41`
+
 module.exports = {
   solidity: "0.8.17", 
   networks: {
     goerli: {
       url: `https://eth-goerli.g.alchemy.com/v2/2wbDDezSTdgHJ078Ebcxorb8ALIyoIb_`,
-      accounts: [`${GOERLI_PRIVATE_KEY}`]
+      accounts: [`${process.env.GOERLI_PRIVATE_KEY}`]
     }
   }
 };
