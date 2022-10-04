@@ -12,4 +12,3 @@ module.exports = {
     }
   }
 };
-//Remember to change the version to the current blockchain version
