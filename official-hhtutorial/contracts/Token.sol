@@ -13,5 +13,8 @@ contract Token {
     //An address variable that stores ethereum account address.
     address public owner; //owner is the standard convention variable
 
+    // A mapping is a key/value map/pair. Here, we store each account's balance.
+    mapping(address => uint256) balances;
+
 
 }
