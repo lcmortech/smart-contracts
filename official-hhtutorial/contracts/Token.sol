@@ -19,4 +19,10 @@ contract Token {
     // The Transfer event helps off-chain applications understand what happens within your contract. 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
+    /**
+     * Read only function to retrieve the token balance of a given account.
+     * 
+     * The 'view' modifier indicates that it doesn't modify the contract's state, which allows us to call it without executing a transaction.
+     */
+
 }
