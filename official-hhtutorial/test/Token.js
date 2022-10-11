@@ -11,6 +11,7 @@ describe('Token contract',()=>{
         //A ContractFactory in ethers.js is an abstraction used to deploy new smart contracts, so Token here is a factory for instances of our token contract.
         const Token = await ethers.getContractFactory('Token');
 
+        //Calling deploy() on a ContractFactory will start the deployment, and return a Promise that resolves to a Contract. This is the object that has a method for each of your smart contract functions.
         const hardhatToken = await Token.deploy();
 
         const ownerBalance = await hardhatToken.balanceOf(owner.address);
