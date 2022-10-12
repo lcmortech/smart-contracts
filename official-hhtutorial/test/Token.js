@@ -22,5 +22,6 @@ describe('Token contract',()=>{
 })
 
 //FINAL NOTES
-//Here we're again using our Contract instance to call a smart contract function in our Solidity code. totalSupply() returns the token's supply amount and we're checking that it's equal to ownerBalance, as it should be.
-//To do this we're using Chai which is a popular JavaScript assertion library. These asserting functions are called "matchers", and the ones we're using here come from the @nomicfoundation/hardhat-chai-matchers plugin, which extends Chai with many matchers useful to test smart contracts.
+// Here we're again using our Contract instance to call a smart contract function in our Solidity code. totalSupply() returns the token's supply amount and we're checking that it's equal to ownerBalance, as it should be.
+// To do this we're using Chai which is a popular JavaScript assertion library. These asserting functions are called "matchers", and the ones we're using here come from the @nomicfoundation/hardhat-chai-matchers plugin, which extends Chai with many matchers useful to test smart contracts.
+// If you need to test your code by sending a transaction from an account (or Signer in ethers.js terminology) other than the default one, you can use the connect() method on your ethers.js Contract object to connect it to a different account, like this:
