@@ -20,3 +20,6 @@ describe('Token contract',()=>{
         expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
     })
 })
+
+//FINAL NOTES
+//Here we're again using our Contract instance to call a smart contract function in our Solidity code. totalSupply() returns the token's supply amount and we're checking that it's equal to ownerBalance, as it should be.
